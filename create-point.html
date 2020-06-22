@@ -27,7 +27,9 @@
       <form>
         <h1>Cadastro do ponto de coleta</h1>
         <fieldset>
-          <h2>Dados da entidade</h2>
+          <legend>
+            <h2>Dados da entidade</h2>
+          </legend>
           <div class="field">
             <label for="name">Nome da entidade</label>
             <input type="text" name="name" />
@@ -49,22 +51,28 @@
 
           <div class="field-group">
             <div class="field">
-              <label for="address">
-                Endereço
+              <label for="state">
+                Estado
               </label>
-              <input type="text" name="address" />
+              <select name="uf">
+                <option value="">Selecione o Estado</option>
+              </select>
             </div>
             <div class="field">
-              <label for="address2">
-                Número/Complemento
+              <label for="city">
+                Cidade
               </label>
-              <input type="text" name="address2" />
+              <select name="city" disabled>
+                <option value="">Selecione a Cidade</option>
+              </select>
             </div>
           </div>
         </fieldset>
 
         <fieldset>
-          <h2>Ítens de coleta</h2>
+          <legend>
+            <h2>Ítens de coleta</h2>
+          </legend>
         </fieldset>
         <button type="submit">Cadastrar ponto de coleta</button>
       </form>
